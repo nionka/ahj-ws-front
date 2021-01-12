@@ -1,6 +1,6 @@
 import ChatController from './ChatController';
 
-const ws = new WebSocket('ws://ahj-ws.herokuapp.com');
+const ws = new WebSocket('wss://ahj-ws.herokuapp.com');
 const chatCtrl = new ChatController(document.querySelector('.container'));
 
 const form = document.querySelector('.form');
