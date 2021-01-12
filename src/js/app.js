@@ -10,8 +10,10 @@ let nickname = null;
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  const body = { type: 'authorization', name: form.name.value };
-  ws.send(JSON.stringify(body));
+  if (ws.readyState === 1) {
+    const body = { type: 'authorization', name: form.name.value };
+    ws.send(JSON.stringify(body));
+  }
 });
 
 textarea.addEventListener('keydown', (e) => {

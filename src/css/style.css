@@ -110,22 +110,26 @@ ul {
 }
 
 .img {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     width: 40px;
     height: 40px;
     border: var(--border);
     border-radius: 50%;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-right: 10px;
+    background-image: url('../img/ava.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.user__img {
+/* .user__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 
 .messages__list {
     flex: 1;

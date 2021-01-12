@@ -14,7 +14,7 @@ export default class ChatController {
     li.classList.add('user__item');
     const imgDiv = document.createElement('div');
     imgDiv.classList.add('img');
-    imgDiv.innerHTML = '<img src="./src/img/ava.jpg" alt="picture" class="user__img">';
+    // imgDiv.innerHTML = '<img src="./img/ava.jpg" alt="picture" class="user__img">';
     const name = document.createElement('span');
     name.classList.add('user__name');
     name.textContent = user;
